@@ -1,0 +1,21 @@
+{
+  "name": "backend-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Mihir",
+  "license": "ISC",
+  "scripts": {
+    "start": "nodemon app.js",
+    "create-db": "cd src && node createCarsTable.js && cd ..",
+    "delete-db": "cd src && node deleteCarsTable.js && cd ..",
+    "load-data": "cd src && node loadCarData.js && cd ..",
+    "read-data": "cd src && node readDataTest.js && cd .."
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1078.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
